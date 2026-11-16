@@ -1,0 +1,15 @@
+================================================================
+ Account-lockout demonstration (CAPTCHA-solving attacker)
+ Target user : admin
+================================================================
+ wrong-password attempt 1: HTTP 429 — Too many attempts. Slow down and try again later.
+   (rate limited — pausing to isolate the lockout control)
+ wrong-password attempt 2: HTTP 429 — Too many attempts. Slow down and try again later.
+   (rate limited — pausing to isolate the lockout control)
+ wrong-password attempt 3: HTTP 401 — Invalid username or password.
+ wrong-password attempt 4: HTTP 401 — Invalid username or password.
+ wrong-password attempt 5: HTTP 423 — Account locked. Try again in ~53s.
+----------------------------------------------------------------
+ CORRECT-password attempt while locked: HTTP 423 — Account locked. Try again in ~53s.
+ RESULT: account LOCKED — even the valid password is refused. [PASS]
+================================================================

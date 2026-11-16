@@ -1,0 +1,23 @@
+================================================================
+ Dictionary attack on http://127.0.0.1:5000/login
+ Target user : admin
+ Wordlist    : 15 candidate passwords
+================================================================
+  #  password          HTTP  outcome
+----------------------------------------------------------------
+  1  123456             401  wrong password
+  2  password           401  wrong password
+  3  admin              401  wrong password
+  4  qwerty             401  wrong password
+  5  letmein            401  wrong password
+  6  welcome            401  wrong password
+  7  monkey             401  wrong password
+  8  dragon             401  wrong password
+  9  football           401  wrong password
+ 10  Summer@2025        200  CRACKED
+----------------------------------------------------------------
+ Attempts made : 10
+ Time taken    : 0.99 s
+ Outcome tally : wrong password=9, CRACKED=1
+ RESULT        : PASSWORD FOUND -> 'Summer@2025'  (login broken)
+================================================================
